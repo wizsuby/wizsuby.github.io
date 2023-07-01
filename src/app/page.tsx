@@ -1,113 +1,134 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
+import {
+  DownloadSimple,
+  GithubLogo,
+  LinkedinLogo,
+  PaperPlaneTilt,
+  TwitterLogo,
+} from "@/assets/icons/icons";
+import Button from "@/components/buttons/Button";
+import CTAButton from "@/components/buttons/CTAButton";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main>
+      <div className="lg:grid lg:grid-cols-12 container mx-auto">
+        <div className="container mx-auto px-3 lg:col-span-4">
+          <div className="pt-28 lg:pt-52">
+            <div className="w-16 h-16 relative overflow-clip bg-neutral-400 rounded-full">
+              <Image
+                src="/Images/MyPhoto.png"
+                fill
+                alt="Image of Suby (Subhrajyoti Basu)"
+              />
+            </div>
+            <div className="flex space-x-3 mt-3 lg:hidden">
+              <GithubLogo size={21} weight="fill" color="#2302A9" />
+              <TwitterLogo size={21} weight="fill" color="#00E0FF" />
+              <LinkedinLogo size={21} weight="fill" color="#0276FF" />
+            </div>
+            <div className="mt-7 lg:mt-14">
+              <div className="text-xl font-semibold lg:text-2xl">
+                🖐️ I'm Suby, Your Expert Fullstack Web Developer & AI Advocate.
+                Unlocking the Power of Exceptional Web Solutions! Elevate Your
+                Online Presence Today.
+              </div>
+            </div>
+            <div className="mt-4 flex items-center space-x-2">
+              <Button>
+                <span>Download Resume</span> <DownloadSimple size={20} />
+              </Button>
+              <Button>
+                <PaperPlaneTilt size={20} />
+              </Button>
+            </div>
+            <div className="mt-14">
+              <div className="text-lg lg:text-xl lg:leading-relaxed">
+                I'm your go-to{" "}
+                <span className="font-semibold underline underline-offset-4">
+                  fullStack web developer
+                </span>
+                . Ready to turn your digital dreams into a reality? With my
+                cutting-edge expertise, I'll make your online presence shine.
+                <div className="mt-4">
+                  Harnessing the latest technologies like
+                  <span className=" flex flex-wrap">
+                    <span className="font-semibold underline underline-offset-4">
+                      Next.js
+                    </span>
+                    ,
+                    <span className="font-semibold underline underline-offset-4">
+                      React.js
+                    </span>
+                    ,
+                    <span className="font-semibold underline underline-offset-4">
+                      Qwik.js
+                    </span>
+                    ,
+                    <span className="font-semibold underline underline-offset-4">
+                      Supabase
+                    </span>
+                    ,
+                    <span className="font-semibold underline underline-offset-4">
+                      Tailwind CSS
+                    </span>
+                    ,
+                    <span className="font-semibold underline underline-offset-4">
+                      Express.js
+                    </span>
+                    ,
+                    <span className="font-semibold underline underline-offset-4">
+                      MongoDB
+                    </span>
+                    ,
+                    <span>
+                      and more. I'll build you a stunning website that performs
+                      flawlessly and it's just the beginning. I’m specialize in
+                      crafting custom animations which creates unforgettable
+                      experience.
+                    </span>
+                  </span>
+                </div>
+                <div className="mt-4">
+                  No matter the size of your business or industry, I'm here to
+                  cater to your unique needs. Let's collaborate and create a web
+                  solution that reflects your vision and goals.{" "}
+                </div>
+                <div className="mt-4">
+                  I'll build websites that not only looks great but also
+                  converts visitors into loyal clients. And the list goes on for
+                  the web Apps with intuitive user interfaces.
+                </div>
+              </div>
+            </div>
+            <div className="mt-4 text-neutral-500 text-sm">
+              Ready to unlock your digital potential? Let's chat and bring your
+              vision to life!
+            </div>
+            <div className="my-4">
+              <CTAButton>
+                <span>Ready To Make An Impact? Contact Me Now</span>
+                <PaperPlaneTilt
+                  className="flex-1 lg:flex-none"
+                  size={22}
+                  weight="fill"
+                />
+              </CTAButton>
+            </div>
+          </div>
+        </div>
+        <div className="lg:col-span-8 hidden lg:block">
+          <div className="h-screen w-full relative ">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/Images/image.png"
+              alt="Abstract 3d element"
+              fill
+              className="object-contain object-right-top"
             />
-          </a>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
-  )
+  );
 }
