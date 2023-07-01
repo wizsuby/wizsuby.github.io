@@ -30,9 +30,9 @@ export default function Home() {
             </div>
             <div className="mt-7 lg:mt-14">
               <div className="text-xl font-semibold lg:text-2xl">
-                🖐️ I'm Suby, Your Expert Fullstack Web Developer & AI Advocate.
-                Unlocking the Power of Exceptional Web Solutions! Elevate Your
-                Online Presence Today.
+                🖐️ I&apos;m Suby, Your Expert Fullstack Web Developer & AI
+                Advocate. Unlocking the Power of Exceptional Web Solutions!
+                Elevate Your Online Presence Today.
               </div>
             </div>
             <div className="mt-4 flex items-center space-x-2">
@@ -45,12 +45,13 @@ export default function Home() {
             </div>
             <div className="mt-14">
               <div className="text-lg lg:text-xl lg:leading-relaxed">
-                I'm your go-to{" "}
+                I&apos;m your go-to{" "}
                 <span className="font-semibold underline underline-offset-4">
                   fullStack web developer
                 </span>
                 . Ready to turn your digital dreams into a reality? With my
-                cutting-edge expertise, I'll make your online presence shine.
+                cutting-edge expertise, I&apos;ll make your online presence
+                shine.
                 <div className="mt-4">
                   Harnessing the latest technologies like
                   <span className=" flex flex-wrap">
@@ -83,28 +84,28 @@ export default function Home() {
                     </span>
                     ,
                     <span>
-                      and more. I'll build you a stunning website that performs
-                      flawlessly and it's just the beginning. I’m specialize in
-                      crafting custom animations which creates unforgettable
-                      experience.
+                      and more. I&apos;ll build you a stunning website that
+                      performs flawlessly and it&apos;s just the beginning.
+                      I&apos;m specialize in crafting custom animations which
+                      creates unforgettable experience.
                     </span>
                   </span>
                 </div>
                 <div className="mt-4">
-                  No matter the size of your business or industry, I'm here to
-                  cater to your unique needs. Let's collaborate and create a web
-                  solution that reflects your vision and goals.{" "}
+                  No matter the size of your business or industry, I&apos;m here
+                  to cater to your unique needs. Let&apos;s collaborate and
+                  create a web solution that reflects your vision and goals.{" "}
                 </div>
                 <div className="mt-4">
-                  I'll build websites that not only looks great but also
+                  I&apos;ll build websites that not only looks great but also
                   converts visitors into loyal clients. And the list goes on for
                   the web Apps with intuitive user interfaces.
                 </div>
               </div>
             </div>
             <div className="mt-4 text-neutral-500 text-sm">
-              Ready to unlock your digital potential? Let's chat and bring your
-              vision to life!
+              Ready to unlock your digital potential? Let&apos;s chat and bring
+              your vision to life!
             </div>
             <div className="my-4">
               <CTAButton>
